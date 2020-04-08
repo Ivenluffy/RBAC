@@ -1,0 +1,15 @@
+F:\AppDemo\DotNet\CMS\DapperExtensions\bin\Debug\DapperExtensions.dll
+F:\AppDemo\DotNet\CMS\DapperExtensions\bin\Debug\DapperExtensions.pdb
+F:\AppDemo\DotNet\CMS\DapperExtensions\bin\Debug\Dapper.dll
+F:\AppDemo\DotNet\CMS\DapperExtensions\bin\Debug\Dapper.xml
+F:\AppDemo\DotNet\CMS\DapperExtensions\obj\Debug\DapperExtensions.csproj.CopyComplete
+F:\AppDemo\DotNet\CMS\DapperExtensions\obj\Debug\DapperExtensions.dll
+F:\AppDemo\DotNet\CMS\DapperExtensions\obj\Debug\DapperExtensions.pdb
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\bin\Debug\DapperExtensions.dll
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\bin\Debug\DapperExtensions.pdb
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\bin\Debug\Dapper.dll
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\bin\Debug\Dapper.xml
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\obj\Debug\DapperExtensions.csprojAssemblyReference.cache
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\obj\Debug\DapperExtensions.csproj.CopyComplete
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\obj\Debug\DapperExtensions.dll
+C:\Resouces\AppDemo\DotNet\新建文件夹\CMS\DapperExtensions\obj\Debug\DapperExtensions.pdb

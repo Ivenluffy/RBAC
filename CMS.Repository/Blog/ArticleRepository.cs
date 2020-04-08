@@ -1,0 +1,40 @@
+﻿using Dapper;
+using CMS.IRepository;
+using CMS.Model;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CMS.Repository
+{
+    public class ArticleRepository : BaseRepository<ArticleModel>, IArticleRepository
+    {
+        /// <summary>
+        /// 文章详细信息
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public ArticleModel GetDetail(int Id)
+        {
+            using (var conn = MySqlHelper.GetConnection())
+            {
+                var sql = @"SELECT a.Id,a.Title,a.ZhaiYao,a.ImgUrl,a.Content,a.TypeId,a.ClassId,c.Name as TypeName,b.Name as ClassName,a.Ding,a.ReadNum,
+                            (SELECT COUNT(1) FROM t_comment WHERE ArticleId = @Id) as CommentNum,
+                            a.Status,a.UpdateOn,a.CreateOn FROM t_article a
+                            INNER JOIN t_article_class b ON a.ClassId = b.Id
+                            INNER JOIN t_article_type c ON a.TypeId = c.Id
+                            where a.Id = @Id; ";
+                return conn.Query<ArticleModel>(sql, new { Id }).FirstOrDefault();
+            }
+        }
+        public IEnumerable<ArticleModel> GetYear()
+        {
+            using (var conn = MySqlHelper.GetConnection())
+            {
+                var sql = @"SELECT date_format(CreateOn,'%Y') as Year FROM t_article
+                            GROUP BY date_format(CreateOn,'%Y')
+                            ORDER BY date_format(CreateOn,'%Y') desc";
+                return conn.Query<ArticleModel>(sql);
+            }
+        }
+    }
+}
