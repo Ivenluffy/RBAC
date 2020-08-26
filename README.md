@@ -1,5 +1,9 @@
 # RightControl_Blog
 
+# 来源:
+#### github:https://github.com/LiuCabbage/RightControl_Blog.git
+
+
 #### 介绍
 前台使用燕十三博客前端模板，后台基于RightControl .NET通用角色权限管理系统搭建，已完成。<br>
 项目地址：http://www.baocaige.top
